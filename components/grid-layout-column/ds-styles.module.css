@@ -1,0 +1,7 @@
+.grid-layout--column {
+    --base-spacing: var(--ds-base-spacing);
+    --grid-gap: var(--ds-base-spacing);
+    display: grid;
+    gap: calc(var(--grid-gap) * var(--ds-base-spacing));
+    grid-auto-flow: column;
+  }

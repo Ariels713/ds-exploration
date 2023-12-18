@@ -1,0 +1,5 @@
+.grid-layout {
+    --grid-gap: var(--ds-base-spacing);
+    display: grid;
+    gap: calc(var(--grid-gap) * var(--ds-base-spacing));
+  }

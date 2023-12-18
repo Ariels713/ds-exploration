@@ -1,0 +1,11 @@
+import styles from './ds-styles.module.css'
+
+function {{pascalCase name}}({ children, styleProps, utilityClass = ''}) {
+  return (
+    <div className={`${styles['g']} ${utilityClass}`} style={styleProps}>
+        {children}
+    </div>
+  )
+}
+
+export default {{pascalCase name}};

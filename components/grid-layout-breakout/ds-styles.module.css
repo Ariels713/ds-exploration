@@ -1,0 +1,20 @@
+
+.grid-layout-breakout{
+  --grid-gap: var(--ds-base-spacing);
+  display: grid;
+  gap: calc(var(--grid-gap) * var(--ds-base-spacing));
+  grid-template-columns:
+  [grid-start] 1fr 
+  [content-start] 10fr
+  [content-end] 1fr 
+  [grid-end];
+  width: 100%;
+}
+
+.grid-layout-breakout > *:not(.ds-breakout) {
+  grid-column: content;
+}
+
+.grid-layout-breakout > :global(.ds-breakout) {
+  grid-column: grid;
+}
